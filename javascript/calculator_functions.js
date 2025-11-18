@@ -21,3 +21,10 @@ function checker(){
   if(inputField.value){console.log('yes')} else{console.log('nah')}
 }
 
+function getEvent(event
+) {
+  if (event.key === 'Enter') {
+    calculate()
+  }
+}
+
