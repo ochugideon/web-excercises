@@ -9,33 +9,35 @@
   </head>
   <body>
     <div class="main-box">
-      <p>Rock Paper Scissors</p>
+      <p class="title-text">Rock Paper Scissors</p>
 
-    <button onclick="
+      <div class="btns-row">
+        <button class="btn" onclick="
     main('Rock')
     ">
       Rock
     </button>
 
-    <button onclick="
+    <button class="btn" onclick="
       main('Paper')
     ">
       Paper
     </button>
 
-    <button onclick="
+    <button class="btn" onclick="
       main('Scissors') 
     ">
       Scissors
     </button>
 
-    <button onclick="
+    <button class="btn" onclick="
       resetScores() 
     ">
-      reset Scores
+      Reset Scores
     </button>
-
-    <p class="js-scoreText"></p>
+      </div>
+    
+    <p class="js-scoreText score-text"></p>
 
     </div>
     
