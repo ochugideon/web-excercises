@@ -1,14 +1,23 @@
  let inputField = document.querySelector('.input-box');
 
-function getButtonValue(value=null){
-      inputField.value += value; 
-    };
+ let isEmpty = true;
+
+clearCalc()
+
+function getButtonValue(value){
+  if(isEmpty) {inputField.value += value;} else {inputField.value ='' ; inputField.value += value; isEmpty=true} 
+  };
 
 function calculate() {
-  inputField.value = eval(inputField.value)
+  inputField.value = eval(inputField.value);
+  isEmpty = false;
 };
 
 function clearCalc() {
-  inputField.value = ''
+  inputField.value = '';
 };
+
+function checker(){
+  if(inputField.value){console.log('yes')} else{console.log('nah')}
+}
 
