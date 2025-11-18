@@ -66,11 +66,20 @@ body{
   border-radius: 35px;
   background: rgb(32, 31, 31);
   color: white;
+  transition: 0.6s ease-in-out;
+}
+
+.btn:hover{
+  background: lightgray;
 }
 
 .firstRow-btn{
   background: rgb(212, 210, 210);
   color: rgb(7, 7, 7);
+}
+
+.firstRow-btn:hover{
+  background: white;
 }
 
 .lastColumn-btns{
