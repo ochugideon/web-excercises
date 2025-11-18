@@ -48,7 +48,9 @@
 
         else if (computerChoice === 'Paper' && playerChoice === 'Scissors') {result = 'You win.'} else if (computerChoice === 'Paper' && playerChoice === 'Rock') {result = 'You lost.'}
         
-        else if (computerChoice === 'Rock' && playerChoice === 'Paper') {result = 'You lost.'} else {result = 'You lost.'};
+        else if (computerChoice === 'Rock' && playerChoice === 'Paper') {result = 'You win.'} else if (computerChoice === 'Rock' && playerChoice === 'Scissors') {result = 'You lost.'}
+        
+        else if (computerChoice === 'Scissors' && playerChoice === 'Paper') {result = 'You lost.'} else if (computerChoice === 'Scissors' && playerChoice === 'Rock') {result = 'You win.'};
 
         alert(`You choose ${playerChoice}, the computer choose ${computerChoice}. ${result}.`);
       }
