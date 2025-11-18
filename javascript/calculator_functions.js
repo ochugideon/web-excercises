@@ -27,4 +27,3 @@ function getEvent(event
     calculate()
   }
 }
-
