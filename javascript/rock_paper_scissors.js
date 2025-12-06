@@ -1,3 +1,5 @@
+//Rock, paper and scissors functions
+
 let scores = JSON.parse(localStorage.getItem('scores'));
 
 let scoreText = document.querySelector('.js-scoreText');
