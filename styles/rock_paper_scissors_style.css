@@ -49,6 +49,12 @@ body{
   font-weight: bold;
   text-shadow: 0 0 1px black;
   color: rgb(31, 31, 1);
+  transition: 0.6s ease;
+}
+
+.btns-row button:hover{
+  background: goldenrod;
+  color: black;
 }
 
 .score-text, .title-text{
