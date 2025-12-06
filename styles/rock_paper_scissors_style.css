@@ -48,7 +48,7 @@ body{
   box-shadow: 0 0 10px rgb(250, 246, 2);
   font-weight: bold;
   text-shadow: 0 0 1px black;
-  color: rgb(119, 119, 1);
+  color: rgb(31, 31, 1);
 }
 
 .score-text, .title-text{
