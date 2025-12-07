@@ -10,7 +10,7 @@ function addTask() {
   todoListField.innerHTML = '';
   todoList.push(task.value);
   for (let taskValue = 0; taskValue <= todoList.length - 1; taskValue++ ) {
-    todoListField.innerHTML += `<p>${todoList[taskValue]}</p>`  
+    todoListField.innerHTML += `<p>${todoList[taskValue]} <button class="btn">Delete Task</button></p>`  
   }
   task.value = ''
 }
