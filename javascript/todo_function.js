@@ -15,7 +15,7 @@ function addTask(){
      for (let taskValue = 0; taskValue < todoList.length; taskValue++ ) {
     html = `<p>
     ${todoList[taskValue]} 
-    <input type="date" class="date-feild"> <button onclick="todoList.splice(${taskValue},1); todoListField.innerHTML = ''; addTask(); "   class="btn">Delete Task</button>
+    <input type="date" class="date-feild"> <button onclick="todoList.splice(${taskValue},1); todoListField.innerHTML = ''; addTask(); "   class="btn">Remove</button>
     </p>`  
 
     taskInList += html;
