@@ -1,49 +1,44 @@
-.main-container{
-  width: 100%;
-  position: fixed;
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.row1, 
+.todo-list{
+  display: grid;
+  grid-template-columns: 150px 150px 100px;
+  grid-gap: 20px;
+  align-items: center;
 }
 
 .row1{
-  display: flex;
-  justify-content: space-between;
+  margin-bottom: 10px
 }
 
-.input-field{
-  width: 70%;
-  font-size: 15px;
-  padding: 5px 5px;
-}
-
-button{
-  background: rgb(2, 199, 2);
-  font-size: 15px;
-  padding: 5px 10px;
-  width: fit-content;
+.row1 button{
+  background: rgb(2, 153, 35);
   color: white;
-  
-}
-
-.todo-list, .row1{
-  width: 30%;
-  
+  padding: 5px 10px;
+  font-size: 15px;
+  border: none;
 }
 
 .todo-list button{
-  background: red;
+  background: darkred;
+  color: white;
+  padding: 5px 10px;
   font-size: 15px;
-}
-
-.todo-list p{
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;
-  display: flex;
-  justify-content: space-between;
-}
-
-.todo-list input{
   border: none;
-  font-size: 15px;
 }
 
+.row1 input{
+  font-size: 15px;
+  padding: 5px 10px;
+  transition: 0.9s ease;
+}
+
+.row1 input:focus{
+  border: none;
+  outline: none;
+  border: 2px solid lightskyblue;
+}
 
