@@ -25,6 +25,7 @@ body{
   background: black;
   color: white;
   border-radius: 30px;
+  position: fixed;
 }
 
 .btns-row{
