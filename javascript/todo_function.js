@@ -7,11 +7,13 @@ let task = document.querySelector('.input-field');
 
 const listItem = document.querySelector('js-listItem');
 
-const todoList = [{name: 'wash', date: '12/04/2025'}];
+const todoList = [];
 
 updateList()
+
 function  updateList() {
   todoListField.innerHTML = '';
+
   let htmlList = '';
   for (let taskValue = 0; taskValue < todoList.length; taskValue++ ) {
     const listObject = todoList[taskValue]
@@ -24,6 +26,11 @@ function  updateList() {
     htmlList += html
   }
   todoListField.innerHTML = htmlList;
+
+  // localStorage.setItem('listItems', htmlList);
+
+  // console.log([localStorage.getItem('listItems')])
+
   task.value = ''
   dateField.value = ''
   console.log(htmlList)
@@ -43,4 +50,8 @@ function buttonEvent(event){
   if(event.key === 'Enter') {
     addTask()
   }
+}
+// this function is to save the list items in local storage
+function saveTask(){
+  localStorage.setItem('listItems', JSON.stringify())
 }
