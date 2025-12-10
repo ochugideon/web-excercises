@@ -27,13 +27,12 @@ function  updateList() {
   }
   todoListField.innerHTML = htmlList;
 
-  // localStorage.setItem('listItems', htmlList);
 
   // console.log([localStorage.getItem('listItems')])
 
   task.value = ''
   dateField.value = ''
-  console.log(htmlList)
+  //console.log(htmlList)
   
   }
 
