@@ -11,30 +11,34 @@ const todoList = [];
 
 updateList()
 
+
+
 function  updateList() {
   todoListField.innerHTML = '';
 
   let htmlList = '';
-  for (let taskValue = 0; taskValue < todoList.length; taskValue++ ) {
-    const listObject = todoList[taskValue]
+
+  todoList.forEach(function(listObject,index){
 
     const name = listObject.name;
     const date = listObject.date;
 
     html = `<div>${name}</div> <div>${date}</div> <button onclick="
-    todoList.splice(${taskValue},1); updateList()">Delete</button>`;
+    todoList.splice(${index},1); updateList()">Delete</button>`;
     htmlList += html
-  }
+  })
   todoListField.innerHTML = htmlList;
-
-
-  // console.log([localStorage.getItem('listItems')])
 
   task.value = ''
   dateField.value = ''
-  //console.log(htmlList)
+}
+
   
-  }
+  // for (let taskValue = 0; taskValue < todoList.length; taskValue++ ) {
+    
+  // //console.log(htmlList)
+  
+  // }
 
 
 function addTask() {
