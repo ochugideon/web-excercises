@@ -8,13 +8,17 @@ let task = document.querySelector('.input-field');
 
 const listItem = document.querySelector('js-listItem');
 
-const todoList = [];
+const todoList = [JSON.parse(localStorage.getItem('listItems'))];
+
 
 updateList()
 
 function  updateList() {
-
+  
+  
   let htmlList = '';
+  
+  console.log(todoList)
 
   todoList.forEach(function(listObject,index){
 
@@ -29,14 +33,16 @@ function  updateList() {
 
   task.value = ''
   dateField.value = ''
-}
 
+  localStorage.setItem('listItems', JSON.stringify(htmlList))
+  console.log(localStorage.getItem('listItems'))
+}
 
 function addTask() {
   if (task.value) {
     todoList.push({name: task.value, date:dateField.value}); 
     task.value = '';
-    dateField.value = ''
+    dateField.value = '';
     setTimeout(
     function()
       {
