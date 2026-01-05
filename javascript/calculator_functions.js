@@ -27,3 +27,9 @@ function getEvent(event
     calculate()
   }
 }
+
+document.querySelector('.backspace').addEventListener('click', ()=> {
+  inputField.value = inputField.value.slice(0,-1);
+}
+
+)
