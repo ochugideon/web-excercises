@@ -1,21 +1,15 @@
-const products = [
-  {
-    picture: 'images/products/IMG_7625.JPG',
-    name: 'Evans Drum Head',
-    ratings: {
-      star: 4.5,
-      rating: 87
-    },
-    price: 1090
-  },
+const cart = [];
 
-  {
-    picture: 'images/products/IMG_7624.JPG',
-    name: 'Promack Drumstick',
-    ratings: {
-      star: 3.5,
-      rating: 127
-    },
-    price: 2095
-  }
-]
+
+
+
+
+
+// console.log(cart);
+
+// addBtn.addEventListener('click', () => {
+//   const quantity = document.querySelector('.quantity');
+//   // console.log(quantity.selectedOptions[0].value);
+//   console.log('hello')
+// })
+
