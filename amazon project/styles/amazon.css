@@ -154,3 +154,13 @@
   padding: 8px;
   border-radius: 50px;
 }
+
+.added-indicator{
+  color: green;
+  margin-top: 5px;
+  display: none;
+}
+
+/* .show-added-indicator{
+  opacity: 1;
+} */

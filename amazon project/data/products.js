@@ -1,4 +1,4 @@
-const products = [
+export const products = [
   {
     id: 'zvcIXTuhqlCdgwA8xZjUyF8bE',
     image: '/amazon project/images/products/IMG_7624.JPG',
@@ -130,6 +130,4 @@ const products = [
     price: '20.50',
   },
 ];
-
-let html = '';
 
