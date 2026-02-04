@@ -10,7 +10,7 @@ products.forEach((product)=>{
           <p class="product-name">${product.name}</p>
         <div class="ratings">
           <img src="/amazon project/images/ratings-img/star-rating-${product.ratings.star * 10}.JPG" alt="" class="stars">
-          <p class="rating">${product.ratings.points}</p>
+          <p class="product-rating-count">${product.ratings.points}</p>
         </div>
         <div class="price">$${product.price}</div>
         <select name="qty" class="quantity js-quantity-selector${product.id}">
@@ -25,7 +25,7 @@ products.forEach((product)=>{
           <option value="9">9</option>
           <option value="10">10</option>
         </select>
-        <div class="added-indicator">added!${product.name}</div>
+        <div class="added-indicator js-added-indicator${product.id}">added to cart !</div>
         </div>
         <button class="add-btn js-add-to-cart" data-product-id="${product.id}">Add to cart</button>
       </div>`
@@ -37,9 +37,11 @@ document.querySelectorAll('.js-add-to-cart').forEach((button) => {
   button.addEventListener('click', () => {
     const productId = button.dataset.productId;
 
-    const selectedQuantity = Number(document.querySelector(`.js-quantity-selector${productId}`).value)
+    const selectedQuantity = Number(document.querySelector(`.js-quantity-selector${productId}`).value);
 
-    console.log(selectedQuantity)
+    displaySuccessMessage(productId)
+
+    // console.log(selectedQuantity)
 
 
     // const approvalSign = button.previousElementSibling;
@@ -48,10 +50,6 @@ document.querySelectorAll('.js-add-to-cart').forEach((button) => {
 
     // console.log(approvalSign.innerHTML)
 
-    
-   
-    
-    
     addToCart(productId, selectedQuantity)
     
   //  document.querySelector('.added-indicator').classList.add('.show-added-indicator')
@@ -61,9 +59,18 @@ document.querySelectorAll('.js-add-to-cart').forEach((button) => {
       cartQuantity += item.quantity
     })
     document.querySelector('.js-cart-quantity').innerHTML = cartQuantity
-    console.log(cart)
-        
+    console.log(cart)     
   })
 });
 
+
+function displaySuccessMessage(productId) {
+  const addIndicator = document.querySelector(`.js-added-indicator${productId}`);
+
+    addIndicator.classList.add('show-added-indicator');
+
+    setTimeout(() => {
+        addIndicator.classList.remove('show-added-indicator')
+    }, 1500);
+}
 

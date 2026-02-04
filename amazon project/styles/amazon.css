@@ -112,7 +112,7 @@
 }
 
 .product-rating-count {
-  color: rgb(1, 124, 182);
+  color: rgb(1, 124, 183);
   cursor: pointer;
   margin-top: 3px;
 }
@@ -144,10 +144,10 @@
   opacity: 0;
 }
 
-.added-to-cart img {
+/* .added-to-cart img {
   height: 20px;
   margin-right: 5px;
-}
+} */
 
 .add-btn {
   width: 100%;
@@ -157,10 +157,12 @@
 
 .added-indicator{
   color: green;
-  margin-top: 5px;
-  display: none;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  opacity: 0
 }
 
-/* .show-added-indicator{
-  opacity: 1;
-} */
+.show-added-indicator{
+ opacity: 1;
+ }
+ 
