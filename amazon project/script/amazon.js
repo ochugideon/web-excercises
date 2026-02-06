@@ -41,18 +41,10 @@ document.querySelectorAll('.js-add-to-cart').forEach((button) => {
 
     displaySuccessMessage(productId)
 
-    // console.log(selectedQuantity)
-
-
-    // const approvalSign = button.previousElementSibling;
-
-    // approvalSign.style.display = 'block'
-
-    // console.log(approvalSign.innerHTML)
 
     addToCart(productId, selectedQuantity)
     
-  //  document.querySelector('.added-indicator').classList.add('.show-added-indicator')
+
     let cartQuantity = 0;
     cart.forEach((item)=> {
       // item.quanity = selectedQuantity;
